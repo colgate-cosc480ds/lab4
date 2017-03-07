@@ -106,6 +106,14 @@ In the python notebook, write a brief (1-2 paragraphs) discussion of your result
 If you're curious, the Iran results were analyzed statistically for fraud.  You can read more about it [here](https://arxiv.org/abs/0906.2789).  The analysis differs somewhat from what we did here but the spirit is the same.
 
 
+### Challenge problem(s)
+
+There are two options:
+
+- Repeat the above but examine the *leading digit*.  Leading digits are *not* uniform but follow [Benford's law](https://en.wikipedia.org/wiki/Benford's_law).  The test statistic must change slightly as well: instead of sum of squared errors, you should divide each square by the value expected under Benford's law.  So, for example, if in your data you see a ones frequency of 0.20, then the first term would be `(0.20 - 0.301)^2 / 0.301`.  The **key to completing this challenge** is to structure your code that you can **reuse** as much as code as possible between the various tasks (US vs. Iran, leading digits vs. tens and ones).  Include some analysis of the leading digits in your python notebook.
+
+- Revisit the dynamic program for edit distance (see the python notebook for lecture 7 in the [lecture repo](https://github.com/colgate-cosc480ds/lecture)).  Write your own version of this function that returns the actual sequence of edit commands that have lowest edit distance. 
+
 
 ##### Acknowledgments
 
