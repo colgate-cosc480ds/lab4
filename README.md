@@ -16,6 +16,11 @@ The ones place and the tens place don't affect who wins. They are essentially ra
 
 It is important to note that a non-uniform distribution does not necessarily mean that the data is fraudulent data. A non-uniform distribution is a great signal for fraudulent data, but it is possible for a non-uniform distribution to appear naturally.
 
+## Coding guidelines
+
+- DRY (Don't repeat yourself).  This lab absolutely cries out for well-designed helper functions!
+- Documentation: each function should have a docstring, following [conventions](https://www.python.org/dev/peps/pep-0257/)
+
 
 ## Task Details
 
